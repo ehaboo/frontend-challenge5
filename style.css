@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+.attribution { font-size: 11px; text-align: center; color: hsl(178, 100%, 50%); }
+.attribution a { color: hsl(228, 45%, 44%); }
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: hsl(217, 54%, 11%);
+}
+.pointer{
+    cursor: pointer;
+}
+
+.view{
+    position: relative;
+}
+
+.view > .svgView{
+    display: none; 
+}
+.pointer:hover{
+    color:hsl(178, 100%, 50%);
+}
+.view:hover .svgView{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 285px;
+    height: 285px;
+    background-color: hsla(178, 100%, 50%, 0.6) ;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+}
+
+.container{
+    width: 323px;
+    border: 1px solid thick;
+    border-radius: 15px;
+    margin: 50px 25px;
+    padding: 18px 20px;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(216, 50%, 16%);
+}
+
+.container > .view > img{
+    width: 285px;
+    border-radius: 10px;
+}
+
+.footer > img{
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.footer > p > span, h3{
+    color: white;
+}
+
+.container > p, 
+.footer> p, 
+.values > span:last-of-type{
+    color: hsl(215, 51%, 70%);
+}
+.footer{
+    display: flex;
+    align-items: center;
+}
+.footer > img {
+    margin-right: 12px;
+}
+
+.values{
+    display: flex;
+    justify-content: space-between;
+}
+
+.values > span{
+    display: flex;
+    align-items: center;
+}
+
+.values > span:first-of-type{
+    color: hsl(178, 100%, 50%);
+}
+
+.values > span svg{
+    margin-right: 6px;
+}
+
+hr{
+    margin: 15px 0;
+    border: none;
+    border-bottom: 0.5px solid hsl(215, 32%, 27%) ;
+}
+
+@media (min-width: 376px){
+    .container{
+        margin: 65px auto;
+    }
+
+
+}
